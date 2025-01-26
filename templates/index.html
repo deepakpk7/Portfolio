@@ -114,32 +114,45 @@
         <i class="fa-solid fa-user-graduate"></i>&nbsp;&nbsp;Education
       </h1>
   
-      <div class="card-container">
-        <div class="card mb-3" data-aos="flip-down" data-aos-duration="1500" data-aos-delay="300">
-          <div class="card-body text-white text-center">
-            <h2 class="card-title">PYTHON FULL-STACK</h2>
-            <h5 class="card-text">SYNNEFO SOLUTIONS @Kochi</h5>
-            <h3 class="date">2024-2025</h3>
-          </div>
+      <div class="row justify-content-center">
+        <!-- Card 1 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <a href="https://synnefo.in/">
+            <div class="card text-white text-center animate-card" data-aos="flip-down" data-aos-duration="1500" data-aos-delay="300">
+              <div class="card-body">
+                <h2 class="card-title">PYTHON FULL-STACK</h2>
+                <h5 class="card-text">SYNNEFO SOLUTIONS @Kochi</h5>
+                <h3 class="date">2024-2025</h3>
+              </div>
+            </div>
+          </a>
+          
         </div>
-        <div class="card mb-3" data-aos="flip-down" data-aos-duration="1500" data-aos-delay="300">
-          <div class="card-body text-white text-center">
-            <h2 class="card-title">Computer Hardware Engineering</h2>
-            <h5 class="card-text">KMCT Polytechnic College Kozhikode</h5>
-            <h3 class="date">2021-2024</h3>
-          </div>
+        <!-- Card 2 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <a href="https://www.kmctpolytechnic.org/department/computer-hardware-engineering">
+            <div class="card text-white text-center animate-card" data-aos="flip-down" data-aos-duration="1500" data-aos-delay="400">
+              <div class="card-body">
+                <h2 class="card-title">Computer Hardware Engineering</h2>
+                <h5 class="card-text">KMCT Polytechnic College Kozhikode</h5>
+                <h3 class="date">2021-2024</h3>
+              </div>
+            </div>
+          </a>
         </div>
-        <div class="card mb-3" data-aos="flip-down" data-aos-duration="1500" data-aos-delay="300">
-          <div class="card-body text-white text-center">
-            <h2 class="card-title">Computer Commerce</h2>
-            <h5 class="card-text">Holy Family HSS Venappara</h5>
-            <h3 class="date">2019-2021</h3>
+        <!-- Card 3 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card text-white text-center animate-card" data-aos="flip-down" data-aos-duration="1500" data-aos-delay="500">
+            <div class="card-body">
+              <h2 class="card-title">Computer Commerce</h2>
+              <h5 class="card-text">Holy Family HSS Venappara</h5>
+              <h3 class="date">2019-2021</h3>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  
   <section id="projects" class="py-5">
     <div class="container">
         <h2 class="text-center mb-4">Projects</h2>
@@ -158,7 +171,7 @@
                   <img src="{{ url_for('static',filename='images/project2.png')}}" class="card-img-top" alt="Project 1">
                   <div class="card-body">
                   <h5 class="card-title">E-Commerce Platform</h5>
-                  <p class="card-text">A Django-based e-commerce application with user authentication and dynamic product listing.</p>
+                  <p class="card-text">Developed a responsive front-end replica of the BookMyShow website using HTML, CSS, and bootstrap, showcasing modern UI design and user-friendly.</p>
                   </div>
               </div>
           </div>
@@ -167,7 +180,7 @@
                 <img src="{{ url_for('static',filename='images/project3.png')}}" class="card-img-top" alt="Project 1">
                 <div class="card-body">
                 <h5 class="card-title">E-Commerce Platform</h5>
-                <p class="card-text">A Django-based e-commerce application with user authentication and dynamic product listing.</p>
+                <p class="card-text">"I created a fully responsive and visually appealing front-end replica of the Puma website using HTML, CSS, and bootstrap to demonstrate my skills in modern web design and user experience optimization."</p>
                 </div>
             </div>
         </div>
@@ -216,16 +229,16 @@
     </div>
   </footer>
   
-
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init({
-      duration: 1200, // Animation duration (in milliseconds)
-      easing: 'ease-out-back', // Animation easing (e.g., ease-in, ease-out)
-      once: true, // Animation triggers only once (default is false)
-      mirror: false, // Whether to trigger the animation when scrolling back (default is false)
-      anchorPlacement: 'top-bottom', // Controls how the element is triggered (e.g., 'top-center', 'top-bottom')
+      duration: 1200,
+      easing: 'ease-out-back', 
+      once: true, 
+      mirror: false, 
+      anchorPlacement: 'top-bottom',
     });
   </script>
   
