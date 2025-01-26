@@ -1,7 +1,48 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Arial, sans-serif;
   padding-top: 3.5rem;
 }
+.navbar {
+  font-family: 'Poppins', sans-serif; 
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand {
+  font-size: 1.25rem;
+  color: #f8f9fa; 
+}
+
+.navbar-brand:hover {
+  color: #0d6efd; 
+}
+
+.nav-link {
+  color: #f8f9fa; 
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #0d6efd; 
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  filter: invert(100%); 
+}
+
+.navbar.fixed-top {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 
 header {
   background: linear-gradient(to right, #007bff, #6610f2);
@@ -11,6 +52,7 @@ header {
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat; 
+  width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -22,7 +64,6 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
   z-index: 1;
 }
 
@@ -34,10 +75,15 @@ header {
 
 header h1 {
   font-size: 3rem;
+  color: black;
+  font-weight: bold;
 }
 
 .btn {
   font-size: 1rem;
+}
+.lead{
+  color: black;
 }
 
 @media (max-width: 768px) {
@@ -90,6 +136,58 @@ header h1 {
     margin-bottom: 20px;
   }
 }
+
+.service {
+  background-color: #f9f9f9;
+}
+
+.service-title {
+  font-size: 2rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.service-list {
+  list-style: none;
+  padding: 0;
+}
+
+.service-item {
+  background-color: #fff;
+  border-radius: 12px;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.service-icon-box img {
+  max-width: 100%;
+  height: auto;
+}
+
+.service-item-title {
+  color: #007bff;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.service-item-text {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .service-list {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
 
 #education .card {
   background: linear-gradient(135deg, #6a11cb, #2575fc);
@@ -183,5 +281,13 @@ footer strong {
 
   .social-icons .social-link {
     font-size: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .hero-bg {
+      height: 50vh; /* Adjust hero section height on smaller screens */
+  }
+  .pro-pic {
+      width: 200px;
   }
 }
