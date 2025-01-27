@@ -1,5 +1,5 @@
 function openPDF() {
-    const pdfUrl = '../static/images/CV.pdf'; // Replace with your PDF file path
+    const pdfUrl = '../static/images/CV.pdf'; 
     window.open(pdfUrl, '_blank');
   }
 

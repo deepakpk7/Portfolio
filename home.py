@@ -22,7 +22,7 @@ def send_message():
     name=request.form['name']
     email=request.form['email']
     message=request.form['message']
-    msg = Message(subject='Hello', sender=email, recipients=['pkdeepakachu123@gmail.com'])
+    msg = Message(subject='From Portfolio', sender=email, recipients=['pkdeepakachu123@gmail.com'])
     msg.body = f"From: {name}\n {email}\n\nMessage:\n{message}"
     mail.send(msg)
     return render_template('index.html', success=True)
