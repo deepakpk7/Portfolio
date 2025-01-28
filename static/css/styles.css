@@ -4,6 +4,8 @@ html {
 
 body {
   font-family: Arial, sans-serif;
+
+
   padding-top: 3.5rem;
 }
 .navbar {
@@ -35,9 +37,8 @@ body {
 
 .nav-link:hover,
 .nav-link.active {
-  color: #50a02a; 
+  color: #64e3ec; 
   font-weight: bold;
-  text-decoration: underline;
 
 }
 
@@ -233,6 +234,9 @@ header h1 {
   font-size: 1.2rem;
   font-weight: 600;
   color: #151514;
+}
+#card{
+  height: 400px;
 }
 
 
