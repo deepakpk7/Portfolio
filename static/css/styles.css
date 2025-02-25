@@ -211,7 +211,7 @@ header h1 {
 
 
 #education .card {
-  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  background: black;
   border: none;
   border-radius: 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -240,7 +240,7 @@ header h1 {
 .card .date {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #151514;
+  color: #ffffff;
 }
 #card{
   height: 400px;
